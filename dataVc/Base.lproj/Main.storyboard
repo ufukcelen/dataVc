@@ -25,15 +25,25 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbQ-rE-aw4">
                                 <rect key="frame" x="97" y="238" width="220" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="2B4-vp-3yb"/>
+                                    <constraint firstAttribute="height" constant="34" id="Dw4-vU-y3f"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rT-Xq-ChN">
+                                <rect key="frame" x="191" y="331" width="32" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wlg-Um-nB2"/>
+                                </constraints>
+                                <state key="normal" title="Zero"/>
+                                <connections>
+                                    <segue destination="gJ9-Kt-8gM" kind="show" id="h1R-sI-h7N"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Uh-6y-liY">
                                 <rect key="frame" x="191" y="293" width="32" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Wn5-Wi-Ke3"/>
+                                    <constraint firstAttribute="height" constant="30" id="mpI-wW-JY6"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -44,15 +54,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pMk-u6-yXJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="2VI-sr-heX"/>
-                            <constraint firstItem="6Uh-6y-liY" firstAttribute="top" secondItem="LbQ-rE-aw4" secondAttribute="bottom" constant="21" id="IWO-lC-lMw"/>
-                            <constraint firstItem="pMk-u6-yXJ" firstAttribute="centerX" secondItem="LbQ-rE-aw4" secondAttribute="centerX" id="N2a-pW-5LX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Uh-6y-liY" secondAttribute="bottom" constant="539" id="NFA-W9-gTS"/>
-                            <constraint firstItem="pMk-u6-yXJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="Q7g-oO-ctK"/>
-                            <constraint firstItem="pMk-u6-yXJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UYJ-Vt-jxJ"/>
-                            <constraint firstItem="LbQ-rE-aw4" firstAttribute="top" secondItem="pMk-u6-yXJ" secondAttribute="bottom" constant="20" id="h2d-ql-gGv"/>
-                            <constraint firstItem="LbQ-rE-aw4" firstAttribute="centerX" secondItem="6Uh-6y-liY" secondAttribute="centerX" id="r1a-BN-exv"/>
-                            <constraint firstItem="LbQ-rE-aw4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="xkM-HY-aal"/>
+                            <constraint firstItem="LbQ-rE-aw4" firstAttribute="centerX" secondItem="6Uh-6y-liY" secondAttribute="centerX" id="8u4-xh-cSn"/>
+                            <constraint firstItem="LbQ-rE-aw4" firstAttribute="top" secondItem="pMk-u6-yXJ" secondAttribute="bottom" constant="20" id="D4n-Fd-eXR"/>
+                            <constraint firstItem="pMk-u6-yXJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="HUq-Dj-zyJ"/>
+                            <constraint firstItem="pMk-u6-yXJ" firstAttribute="centerX" secondItem="LbQ-rE-aw4" secondAttribute="centerX" id="Nxq-eR-Ci7"/>
+                            <constraint firstItem="8rT-Xq-ChN" firstAttribute="top" secondItem="6Uh-6y-liY" secondAttribute="bottom" constant="8" id="QCm-fa-va8"/>
+                            <constraint firstItem="6Uh-6y-liY" firstAttribute="leading" secondItem="8rT-Xq-ChN" secondAttribute="leading" id="VNO-to-R6p"/>
+                            <constraint firstItem="pMk-u6-yXJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="We9-r0-jak"/>
+                            <constraint firstItem="LbQ-rE-aw4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="cJl-lF-HV0"/>
+                            <constraint firstItem="6Uh-6y-liY" firstAttribute="top" secondItem="LbQ-rE-aw4" secondAttribute="bottom" constant="21" id="hSj-mE-qig"/>
+                            <constraint firstItem="pMk-u6-yXJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMV-rn-EUy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8rT-Xq-ChN" secondAttribute="bottom" constant="501" id="nca-UU-lFd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8jq-nR-lKJ"/>
@@ -129,6 +141,9 @@
             <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9Q9-GO-shE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

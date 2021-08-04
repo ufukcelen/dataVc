@@ -12,7 +12,7 @@ class SecondVC: UIViewController {
    
     @IBOutlet weak var nameTextFieldS: UILabel!
     
-    let name = ""
+    var name = ""
     
     
     override func viewDidLoad() {
