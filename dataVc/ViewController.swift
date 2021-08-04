@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        nameTextField.text = ""
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "to2ndVC" {
             let destinationVC = segue.destination as! SecondVC
